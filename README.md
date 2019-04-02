@@ -40,11 +40,23 @@ The "images" folder should be self explanatory. For beginners you can run your M
 ## Starting off 
 The first thing to do is create a New Project in RStudio. File>New Project and create a folder on your computer that works. In my example this will be `\thesisUC` you'll notice on your computer a `.Rproj` file is now created. When you want to make edits to your document I would recoomend opening this file.
 
+## Installing packages
+The first time you run RStudio you will need to install packages before you can load them. You only need to install a package once on any given computer. Normally you install packages using the following syntax:
+`install.packages("PackageName")`
+After a package is installed you can load it by writing
+`library(PackageName)`
+
+This can be a little tedious and span several lines when you have several packages to load. For this reason I use a package called `pacman` in my scripts to facilitate. In short, `pacman` will check to see if a package is installed (if not it will download it for you) and then subsequently load it for you. Grant a fair amount of time the first time you run the script since every package will need to be installed. The compiling will be much much faster the second time around.
+
+There are a few packages where using pacman does not work. These include
+- ggeffects
+- apastats
+In order for these packages to be installed you will need to use the devtools package (only the first time). 
+
 ## Creating your RMarkdown document
 The layout for your projects are normally split into chapters. You have one document whose sole role is to compile the chapters into a `pdf` document which we will call `master`. File>New File>RMarkdown.
 
 *Note: if you don't want to go through this process you can download the zip file contained on this repo.
-
 
 # Exporting your references from EndNote to Zotero
 This part can suck for some people. But I would highly recommend switching to save yourself some headaches down the road. Start by
@@ -62,7 +74,9 @@ Screenshots and a more detailed guide are forthcoming.
 
 ## For my use (sites on how to use Git with RStudio)
 [Guide to initial setup with Mac](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd)
+
 https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html
+
 https://resources.github.com/whitepapers/github-and-rstudio/
 
 [A review of Markdown syntax](https://guides.github.com/features/mastering-markdown/)
