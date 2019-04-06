@@ -12,6 +12,7 @@ http://r-bio.github.io/intro-git-rstudio/
 # To Do
 Add the citation style language into a folder in the repository.
 Add how to naviguate using the Document Outline (`Ctrl+Shift+O`)
+Add `stats.R` and other documents so the person can run the document right off the bat. Test this using Ibukun's computer to make sure it works.
 
 # Installing Required Programs
 
