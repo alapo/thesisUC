@@ -11,6 +11,7 @@ http://r-bio.github.io/intro-git-rstudio/
 
 # To Do
 Add the citation style language into a folder in the repository.
+Add how to naviguate using the Document Outline (`Ctrl+Shift+O`)
 
 # Installing Required Programs
 
@@ -33,14 +34,13 @@ For using references we have 3 packages we need to install
 There are many ways to go about this but here is a general setup which you can modify to your needs.
 In my project files I have (at the very least) the following folders
 - raw
+   - *contains the original data which I never touch. If I ever need to go back to it I will make a copy and store it in "data".*
 - data
     - tables
 - images
+   - *The "images" folder should be self explanatory. For beginners you can run your MATLAB scripts and save the images in this directory but be aware that RStudio can also produce graphs.*
 - styles
-
-"raw" contains the original data which I never touch. If I ever need to go back to it I will make a copy and store it in "data".
-
-The "images" folder should be self explanatory. For beginners you can run your MATLAB scripts and save the images in this directory but be aware that RStudio can also produce graphs.
+   - *Contains files that will "style" the document.* 
 
 We will be referencing both the `tables` and `images` folders when we write our document.
 
@@ -85,7 +85,43 @@ In order for these packages to be installed you will need to use the devtools pa
 ## Creating your RMarkdown document
 The layout for your projects are normally split into chapters. You have one document whose sole role is to compile the chapters into a `pdf` document which we will call `master`. File>New File>RMarkdown.
 
-*Note: if you don't want to go through this process you can download the zip file contained on this repo.
+*Note: if you don't want to go through this process you can download the zip file contained on this repo.*
+
+### Referencing an article in your writing.
+In order to do this simply write the `@` symbol followed by the citekey. For example `[@michel2018]`. If you do not want the author to show up in your write-up simply add a negative sign like this `[-@michel2018]`.
+
+## Running your Stats in R. 
+*This part will be completed in the `stats.R` script* 
+The basics here is that you run your statistics and save them in both their summarized version and their raw version. What does this mean? Well here is an example. 
+
+First you need to load your data into your environment. For most, this will be an excel file. 
+`db <- read_excel("G:/My Drive/Projects/R15_Pipeline/RExports/allData.xlsx", sheet = "Sheet1")`
+
+Now you should be able to view your database in R. Here is an example.
+`model <- lmer(MyIV~ Group + Gender+ Group*Gender ,data=db)`
+This will save the statistic in its raw form. I usually give this a better name of the form `mod_` preceding the name of the statistic. For example, `mod_GroupEffect`.  Secondly, I also save the summary of the model. This is the nicely printed model which you will see in your console. I give this something in the form of `modsum` which is short for model summary. 
+`modsum_GroupEffect <- summary(model)`
+
+Once you are done running all your statistics we need to save your models and model summaries into an `.RData` file. Here is the code I use to accomplish this
+
+`# Save the data ------------------------------
+save(list=ls(pattern="mod|Table"), file = "G:/My Drive/Projects/MyThesis/data/stats.RData")
+rm(list=ls(pattern="mod|Table"))`
+
+The first line is simply a comment. Which I like having to be able to view everything in the document outline (`Ctrl+Shift+O`)
+The second line saves all variables in your workspace that start with the word `mod` into your `/data` folder.
+The final line removes/clears your workspace of these variables.
+
+If ever you make any changes to a model, you can simply re-run the `stats.R` script by pressing `Ctrl+Shift+K` and an updated `stats.RData` file will be saved in your workspace. 
+
+**At this point you have finished running your statistics and you are ready to put them into your document**
+
+### Things you may need to do
+In some cases you may need to convert a column into "Factors" this can be done very easily
+`db$VarName <- factor(db$VarName)`
+You can confirm this worked by typing
+`levels(db$Varname)`
+
 
 # Misc
 Here are a list of notes that may be useful but did not fit specifically in any section above.
