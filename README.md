@@ -9,6 +9,7 @@ This guide has the goal of introducing you to a new way of writing your thesis u
 This is a site I saw which has a quick intro on why you should consider using version control
 http://r-bio.github.io/intro-git-rstudio/
 
+# Installing Required Programs
 
 Before we start there are a few things we need to make this go well.
 
@@ -25,7 +26,7 @@ For using references we have 3 packages we need to install
    - [2nd option](https://www.overleaf.com/latex/templates/university-of-calgary-thesis-template/jddnhskkgpms)
 
 
-# Setting up your work environment
+# Setting up your folder/work environment
 There are many ways to go about this but here is a general setup which you can modify to your needs.
 In my project files I have (at the very least) the following folders
 - raw
@@ -35,13 +36,29 @@ In my project files I have (at the very least) the following folders
 - styles
 
 "raw" contains the original data which I never touch. If I ever need to go back to it I will make a copy and store it in "data".
-The "images" folder should be self explanatory. For beginners you can run your MATLAB scripts and save the images in this directory but be aware that RStudio can also produce graphs. We will be referencing both the `tables` and `images` folders when we write our document.
+
+The "images" folder should be self explanatory. For beginners you can run your MATLAB scripts and save the images in this directory but be aware that RStudio can also produce graphs.
+
+We will be referencing both the `tables` and `images` folders when we write our document.
 
 ## Starting off 
-The first thing to do is create a New Project in RStudio. File>New Project and create a folder on your computer that works. In my example this will be `\thesisUC` you'll notice on your computer a `.Rproj` file is now created. When you want to make edits to your document I would recoomend opening this file.
+The first thing to do is create a New Project in RStudio. File>New Project and create a folder on your computer that works. In my example this will be `\thesisUC` you'll notice on your computer a `.Rproj` file is now created. When you want to make edits to your document I would recommend opening this file.
 
-## Installing packages
-The first time you run RStudio you will need to install packages before you can load them. You only need to install a package once on any given computer. Normally you install packages using the following syntax:
+## Types of documents
+In order to make things simple I will break this up into a few sections. The goal here is to make your thesis as sustainable as possible which means if a committee member asks you to change "one little thing" you do not have an endless number of manual edits to make. In order to do this I have 3 separate documents I make.
+
+- 1 RMarkdown document (.Rmd)
+   - This is what you write your document in. It will load the .Rdata file that you created in `stats.R` 
+- 1 R script called "createPlots"
+   - This is only used if you plan on creating figures using R. If you are doing this in MatLAB then you do not need this script
+   - The results of this script are all saved in your `\images` folder.
+- 1 R script called "stats.R" 
+   - This will run your statistical models and save them as an .RData file
+   
+## Installing Packages
+The first time you run RStudio you will need to install packages before you can load them. While installing it is possible that you need to set `opts(repositories` currently. This is a one time thing, do not let it intimidate you.
+
+You only need to install a package once on any given computer. Normally you install packages using the following syntax:
 `install.packages("PackageName")`
 After a package is installed you can load it by writing
 `library(PackageName)`
@@ -58,19 +75,16 @@ The layout for your projects are normally split into chapters. You have one docu
 
 *Note: if you don't want to go through this process you can download the zip file contained on this repo.
 
-# Exporting your references from EndNote to Zotero
+# Misc
+Here are a list of notes that may be useful but did not fit specifically in any section above.
+
+## Exporting your references from EndNote to Zotero
 This part can suck for some people. But I would highly recommend switching to save yourself some headaches down the road. Start by
 
 1. Installing [Zotero](https://www.zotero.org/download/) 
 2. Installing the [Better BibTex Plugin](https://retorque.re/zotero-better-bibtex/installation/)
 
 Screenshots and a more detailed guide are forthcoming. 
-
-
-
-
-
-
 
 ## For my use (sites on how to use Git with RStudio)
 [Guide to initial setup with Mac](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd)
