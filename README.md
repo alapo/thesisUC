@@ -47,13 +47,18 @@ The first thing to do is create a New Project in RStudio. File>New Project and c
 ## Types of documents
 In order to make things simple I will break this up into a few sections. The goal here is to make your thesis as sustainable as possible which means if a committee member asks you to change "one little thing" you do not have an endless number of manual edits to make. In order to do this I have 3 separate documents I make.
 
-- 1 RMarkdown document (.Rmd)
-   - This is what you write your document in. It will load the .Rdata file that you created in `stats.R` 
-- 1 R script called "createPlots"
+
+- 1 R script called `createPlots.R`
    - This is only used if you plan on creating figures using R. If you are doing this in MatLAB then you do not need this script
    - The results of this script are all saved in your `\images` folder.
-- 1 R script called "stats.R" 
-   - This will run your statistical models and save them as an .RData file
+- 1 R script called `stats.R` 
+   - This will run your statistical models and save them as one .RData file.
+   - For simplicity we will call it `stats.RData`
+- 1 RMarkdown document (.Rmd)
+   - This is what you write your document in.
+   - It will load the .Rdata file that you created in `stats.R` 
+   - There will be other files it will need to reference to run smoothly but we can break that down later
+      - `csl` file which is required 
    
 ## Installing Packages
 The first time you run RStudio you will need to install packages before you can load them. While installing it is possible that you need to set `opts(repositories` currently. This is a one time thing, do not let it intimidate you.
