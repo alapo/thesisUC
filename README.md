@@ -59,7 +59,7 @@ In order to make things simple I will break this up into a few sections. The goa
    - For simplicity we will call it `stats.RData`
 - 1 RMarkdown document (.Rmd)
    - This is what you write your document in.
-   - It will load the .Rdata file that you created in `stats.R` 
+   - It will load the `stats.Rdata` file that you created in `stats.R` 
    - There will be other files it will need to reference to run smoothly but we can break that down later
       - `.cls` file which is required to "style" the document when you export to pdf. This is stored in the `\styles` folder (see above)
          - You may also have a `.tex` file in your pre-amble in more complex designs but you can ignore that for now.
