@@ -9,6 +9,9 @@ This guide has the goal of introducing you to a new way of writing your thesis u
 This is a site I saw which has a quick intro on why you should consider using version control
 http://r-bio.github.io/intro-git-rstudio/
 
+# To Do
+Add the citation style language into a folder in the repository.
+
 # Installing Required Programs
 
 Before we start there are a few things we need to make this go well.
@@ -58,7 +61,11 @@ In order to make things simple I will break this up into a few sections. The goa
    - This is what you write your document in.
    - It will load the .Rdata file that you created in `stats.R` 
    - There will be other files it will need to reference to run smoothly but we can break that down later
-      - `csl` file which is required 
+      - `.cls` file which is required to "style" the document when you export to pdf. This is stored in the `\styles` folder (see above)
+         - You may also have a `.tex` file in your pre-amble in more complex designs but you can ignore that for now.
+      - A reference `.docx` file which will "style" the document when you export to `docx`. I also store this into the `\styles` folder
+      - A `.bib` file. This is what stores your bibliographic references. In Zotero this can be automatically updated everytime you add a citation. There are manual ways to accomplish this with EndNote but I will not cover them here. One of the reasons is that the *citekeys* that you would need to use are not ideal. By using Zotero and BetterBibTex plugin your citations being called in the document make much more sense (e.g. lapointe2017)
+      - A `.csl` AKA citation style language file (e.g. `apa.csl`). This is what will dictate how your citations appear in your document (e.g. APA, MLA etc.). I recommend [downloading this repository](https://github.com/citation-style-language/styles) and saving it somewhere on your computer. I have placed it in the projects main directory **BUT I WOULD NOT RECOMMEND THIS**. There is no need to have a copy of these files for every project.
    
 ## Installing Packages
 The first time you run RStudio you will need to install packages before you can load them. While installing it is possible that you need to set `opts(repositories` currently. This is a one time thing, do not let it intimidate you.
