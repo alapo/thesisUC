@@ -24,8 +24,8 @@ Before we start there are a few things we need to make this go well.
 3. Install [MikTex](https://miktex.org/download) (if you are using Windows) or [MacTex](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd) (if you are using a Mac)
 
 For using references we have 3 packages we need to install
-1. Install Zotero (sorry EndNote users)
-2. Install BetterBibTex
+1. Instal [Zotero](https://www.zotero.org/download/) 
+2. Instal [Better BibTex Plugin](https://retorque.re/zotero-better-bibtex/installation/)
 3. The citr package (optional) and make a keyboard shortcut for it (I like `Alt+M`)
 4. The .cls file for University of Calgary thesis (of which there are two to choose from) and place it in the "styles" folder
    - [1st option](https://www.overleaf.com/latex/templates/university-of-calgary-thesis-template/zgjghsjjhmnj)
@@ -104,9 +104,9 @@ This will save the statistic in its raw form. I usually give this a better name 
 
 Once you are done running all your statistics we need to save your models and model summaries into an `.RData` file. Here is the code I use to accomplish this
 
-`# Save the data ------------------------------
-save(list=ls(pattern="mod|Table"), file = "G:/My Drive/Projects/MyThesis/data/stats.RData")
-rm(list=ls(pattern="mod|Table"))`
+`# Save the data ------------------------------`
+`save(list=ls(pattern="mod|Table"), file = "G:/My Drive/Projects/MyThesis/data/stats.RData")`
+`rm(list=ls(pattern="mod|Table"))`
 
 The first line is simply a comment. Which I like having to be able to view everything in the document outline (`Ctrl+Shift+O`)
 The second line saves all variables in your workspace that start with the word `mod` into your `/data` folder.
