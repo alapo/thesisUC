@@ -26,11 +26,10 @@ Before we start there are a few things we need to make this go well.
 For using references we have 3 packages we need to install
 1. Install Zotero (sorry EndNote users)
 2. Install BetterBibTex
-3. The citr package (optional)
+3. The citr package (optional) and make a keyboard shortcut for it (I like `Alt+M`)
 4. The .cls file for University of Calgary thesis (of which there are two to choose from) and place it in the "styles" folder
    - [1st option](https://www.overleaf.com/latex/templates/university-of-calgary-thesis-template/zgjghsjjhmnj)
    - [2nd option](https://www.overleaf.com/latex/templates/university-of-calgary-thesis-template/jddnhskkgpms)
-
 
 # Setting up your folder/work environment
 There are many ways to go about this but here is a general setup which you can modify to your needs.
@@ -50,8 +49,7 @@ We will be referencing both the `tables` and `images` folders when we write our 
 The first thing to do is create a New Project in RStudio. File>New Project and create a folder on your computer that works. In my example this will be `\thesisUC` you'll notice on your computer a `.Rproj` file is now created. When you want to make edits to your document I would recommend opening this file.
 
 ## Types of documents
-In order to make things simple I will break this up into a few sections. The goal here is to make your thesis as sustainable as possible which means if a committee member asks you to change "one little thing" you do not have an endless number of manual edits to make. In order to do this I have 3 separate documents I make.
-
+In order to make things simple I will break this up into a few sections. The goal here is to make your thesis as sustainable as possible which means if a committee member asks you to change "one little thing" you do not have an endless number of manual edits to make. In order to do this I have 3 separate documents I make. You could technically put all of this into the `.Rmd` document but that will slow down your compiling time substantially which is why I like to split them up into seperate files.
 
 - 1 R script called `createPlots.R`
    - This is only used if you plan on creating figures using R. If you are doing this in MatLAB then you do not need this script
@@ -123,7 +121,6 @@ In some cases you may need to convert a column into "Factors" this can be done v
 `db$VarName <- factor(db$VarName)`
 You can confirm this worked by typing
 `levels(db$Varname)`
-
 
 # Misc
 Here are a list of notes that may be useful but did not fit specifically in any section above.
