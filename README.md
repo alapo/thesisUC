@@ -18,6 +18,7 @@ This guide has the goal of introducing you to a new way of writing your thesis u
 - Fix the current UCalgary .cls files. They are fairly crap for inclusion in RMarkdown. Look into the University of Michigan version and adapt from there.
 - Confirm that the template being used is accurate
 - Create a docx template that we can use to export to `docx`.
+- `options(repos='http://cran.rstudio.com/')`
 
 # Installing Required Programs
 
