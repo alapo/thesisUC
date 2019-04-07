@@ -24,9 +24,11 @@ This guide has the goal of introducing you to a new way of writing your thesis u
 
 Before we start there are a few things we need to make this go well.
 
-1. Install [R](https://www.r-project.org/)
-2. Install [RStudio](https://www.rstudio.com/products/rstudio/download/)
-3. Install [MikTex](https://miktex.org/download) (if you are using Windows) or [MacTex](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd) (if you are using a Mac)
+1. Install [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+2. Install [R](https://www.r-project.org/)
+3. Install [RStudio](https://www.rstudio.com/products/rstudio/download/)
+4. Install [MikTex](https://miktex.org/download) (if you are using Windows) or [MacTex](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd) (if you are using a Mac)
+
 
 For using references we have 3 packages we need to install
 1. Install [Zotero](https://www.zotero.org/download/) 
