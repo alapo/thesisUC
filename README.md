@@ -26,8 +26,8 @@ Before we start there are a few things we need to make this go well.
 3. Install [MikTex](https://miktex.org/download) (if you are using Windows) or [MacTex](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd) (if you are using a Mac)
 
 For using references we have 3 packages we need to install
-1. Instal [Zotero](https://www.zotero.org/download/) 
-2. Instal [Better BibTex Plugin](https://retorque.re/zotero-better-bibtex/installation/)
+1. Install [Zotero](https://www.zotero.org/download/) 
+2. Install [Better BibTex Plugin](https://retorque.re/zotero-better-bibtex/installation/)
 3. The citr package (optional) and make a keyboard shortcut for it (I like `Alt+M`)
 4. The .cls file for University of Calgary thesis (of which there are two to choose from) and place it in the "styles" folder
    - [1st option](https://www.overleaf.com/latex/templates/university-of-calgary-thesis-template/zgjghsjjhmnj)
@@ -61,6 +61,8 @@ In order to make things simple I will break this up into a few sections. The goa
    - For simplicity we will call it `stats.RData`
 - 1 RMarkdown document (.Rmd)
    - This is what you write your document in.
+      - The alternative is to have 1 `master.Rmd` file which compiles all your chapters. 
+      - Every chapter would be its own markdown document (e.g. `Chapter1.Rmd`). 
    - It will load the `stats.Rdata` file that you created in `stats.R` 
    - There will be other files it will need to reference to run smoothly but we can break that down later
       - `.cls` file which is required to "style" the document when you export to pdf. This is stored in the `\styles` folder (see above)
