@@ -1,0 +1,123 @@
+\AtBeginDocument{\let\maketitle\relax}
+
+\title{
+   [Thesis Title (Title case, no more than 240 characters. No bold font or symbols, except Greek)]
+   \\ \bigskip
+   [Thesis Title Second Line (optional)]
+   }
+   
+  \author{Andrew P. Lapointe}
+  \dept{Graduate Program in Mathematics and Statistics}
+  \degree{Doctor of Philosophy} % or, e.g., Master of Science
+  \gradyear{2019}
+  \monthname{April}
+  %\thesis{Thesis}              % may change `Thesis' to `Dissertation' depending on type of work
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%% Make the thesis title page.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \frontmatter           %% Don't remove this line.
+  \makethesistitle       %% Don't remove this line.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                    %%
+%% Prefatory pages                                                    %%
+%%                                                                    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The following sections are in the correct order    
+%% as specified by the April 2014 thesis guidelines
+%% set by the University of Calgary.
+%%
+%% You may remove the optional sections, but do not
+%% change their order.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Abstract page (required)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{thesisabstract}
+   [This page is required for all graduate student theses at the University of Calgary. An abstract is a short paragraph explaining the major points and conclusions of the thesis. Abstracts in theses presented by candidates for Master’s degrees must be no longer than 150 words. Abstracts in theses presented by candidates for doctoral degrees must be no longer than 350 words. Hyphenated words or words separated by a slash are considered two words.]
+  \end{thesisabstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Preface page (optional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% This section is required if the work presented 
+%% in the thesis is done as part of a collaboration.
+%% In this case, the preface must state which parts
+%% of the thesis are the author's original work.
+%% Otherwise this section is optional.
+
+  \chapter{Preface}
+ 
+  This thesis is an original work by the author. No part of this thesis has been previously published.
+ 
+  % Some of the research conducted for this thesis forms part of an international research collaboration, led by Professor R.C. Smith at the University of Hogwarts
+   
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Acknowledgements page (required)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \chapter{Acknowledgements}  
+  
+    [Don't forget to thank someone.]
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Dedication page (this section is optional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \chapter[Dedication]{}
+
+  \begin{dedication}
+     To all the time I've wasted...
+  \end{dedication}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Table of Contents (required)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Various lists
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% List of figures (required, if any)
+  \listoffigures
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% List of tables (required, if any)
+  \listoftables
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% List of Symbols, abbreviations, and 
+%% nomenclature (required, if any)   
+%%
+%% (Note: You may use your own format for your list of symbols, 
+%%  abbreviations, etc. This format is just a guideline)
+%%
+  \chapter{List of Symbols, Abbreviations, and Nomenclature}      
+  \begin{tabbing}
+    Symbol~~~~~\= \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \parbox{5in}{Definition}\\
+
+    \addsymbol \mbox{$\alpha$}: {The first letter of the Greek alphabet}
+    \addsymbol \mbox{$\beta$}: {The second letter of the Greek alphabet}
+    %
+    % Add more symbols here...
+    % . 
+    % .
+    % .
+    %
+    % ALWAYS KEEP THE FOLLOWING LINE IF YOU USE THIS LIST OF SYMBOLS
+  \end{tabbing}
+

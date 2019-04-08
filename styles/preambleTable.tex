@@ -1,0 +1,194 @@
+\AtBeginDocument{\let\maketitle\relax}
+
+\department{Kinesiology}
+\year=2019
+
+\frontpagestyle{1}
+
+\committee{Professor Steven P. Broglio, Chair \\ Professor William J. Gehring \\ Assistant Professor Sean K. Meehan \\   Assistant Professor Michael Vesia}
+\chair{Professor Steven P. Broglio}
+
+% Here is my list of abbreviations
+\abbreviations{
+\acro{AMPA}{$\alpha$-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid}
+\acro{AAN}{American Academy of Neurology}
+\acro{ADD}{Attention deficit disorder}
+\acro{ADHD}{Attention deficit hyperactivity disorder}
+\acro{AE}{Athletic exposures}
+\acro{ANOVA}{Analysis of variance}
+\acro{ATP}{Adenosine triphosphate}
+\acro{BNA}{Brain Network Analysis}
+\acro{BOLD}{Blood-oxygen-level dependent}
+\acro{CER}{Comparative effectiveness research}
+\acro{CISG}{Concussion in Sport Group}
+\acro{CSF}{Cerebrospinal fluid}
+\acro{CTE}{Chronic traumatic encephalopathy}
+\acro{DKI}{Diffusion kurtotis imaging}
+\acro{DLPFC}{Dorsolateral prefrontal cortex}
+\acro{DTI}{Diffusion tensor imaging}
+\acro{EEG}{Electroencephalogram}
+\acro{EGI}{Electro-Geodesics Inc.}
+\acro{ERN}{Event-related negativity}
+\acro{ERP}{Event-related potentials}
+\acro{FA}{Fractional anisotropy}
+\acro{FFT}{Fast-Fourier transformation}
+\acro{FLAIR}{Fluid attenuated inversion recovery}
+\acro{fMRI}{Functional magnetic resonance imaging}
+\acro{GLM}{General linear models}
+\acro{GoC}{Correct/Go (ERP Condition)}
+\acro{GoI}{Incorrect/Go (ERP Condition)}
+\acro{GSI}{Gadd severity index}
+\acro{HBI}{Health behavior inventory}
+\acro{HIC15}{Head injury criterion}
+\acro{HITS}{Head Impact Telemetry System}
+\acro{HITsp}{Head Impact Technology severity profile}
+\acro{LME}{Linear mixed effects}
+\acro{MANOVA}{Multivariate analysis of variance}
+\acro{MD}{Mean diffusivity}
+\acro{MRI}{Magnetic resonance imaging}
+\acro{ms}{milliseconds}
+\acro{mTBI}{Mild traumatic brain injury}
+\acro{NMDA}{N-Methyl-D-aspartic acid}
+\acro{Na-K}{Sodium-potassium}
+\acro{NgC}{Correct/No-Go (ERP Condition)}
+\acro{NgI}{Incorrect/No-Go (ERP Condition)}
+\acro{NIOSHA}{National Institute for Occupational Safety and Health}
+\acro{Pe}{Post-error positivity}
+\acro{P-values}{Probability values}
+\acro{qEEG}{Quantitative electroencephalograph}
+\acro{RSHI}{Repeated subclinical head impacts}
+\acro{RWECP}{combined-probability risk-weighted cumulative exposure}
+\acro{SRC}{Sport-related concussion}
+\acro{SWLS}{Satisfaction With Life Survey}
+\acro{TBH}{Time between hits}
+\acro{TBI}{Traumatic brain injury}
+\acro{TPM}{Two-photon microscopy}
+\acro{VMPFC}{Ventral medial prefrontal cortex}
+}
+
+% Some abstract text
+\abstract{
+{\textbf{Background}}
+Concussions occur at a rate of seven million annually within high school athletics, where football is responsible for the largest proportion of these injuries among all sports. Literature suggests that both concussion history and exposure to repeated subclinical head impacts may lead to long term declines in brain function. The length of exposure to result in these effects has mostly been observed in adult athletes using very large (e.g. lifetime) windows of exposure.
+\linebreak{\textbf{Objective}}
+The objective of the current study is to investigate changes in ERP components across the course of a season of exposure in contact and non-contact groups of high school athletes. The relationship between any potential changes measures in ERP components and repeated subclinical head impacts within the contact sport group will also be elucidated.
+\linebreak{\textbf{Methods}}
+24 athletes were included in the study (Twelve football and twelve non-contact athletes). Athletes underwent testing prior to the season, at mid-season and at the end of the season. Event-related potential components were calculated during an auditory Go/No-Go task while participants were equipped with a 256 electrode EEG. Football athletes were also equipped with helmets which recorded the magnitude and frequency of impacts over the course of a season.
+\linebreak{\textbf{Results}}
+Changes in N2 and P3 latency between each athlete type were seen across the course of the season. N2 latency for both athlete types was significantly influenced by the number of previous diagnosed concussions. Within the football athletes, linear impact density was shown to significantly influence changes in P3b that occurred across the season. This measure may help classify contact sport athlete sensitivity to incur concussive injuries. 
+\pagebreak{\textbf{Conclusion}}
+The results from this study indicate that contact and non-contact athletes show differential changes in brain components over the course of a season of exposure. Changes within the contact group may be explained in part by the magnitude of head impact metrics incurred over that time.
+}
+
+\newenvironment{p1_table}
+{
+\begin{landscape}
+\subsection{Results Summary}\label{results-summary-1}
+\begin{table}[H]
+
+\caption{\label{tab:unnamed-chunk-13}\label{tbl:summary_project1a}Results Summary: Contact vs Non-Contact Athletes}
+\centering
+\begin{tabular}{lllrr}
+\toprule
+Component & Test & Result & R\textsuperscript{2}\textsubscript{LMM(c)} & R\textsuperscript{2}\textsubscript{LMM(m)}\\
+\midrule
+P3b amplitude & Athlete type×Undiagnosed Concussions×Trial Type & t(310)=3.08, p=.002 & 0.34 & 0.66\\
+P3b latency & Trial Type & t(309)=3.47, p<.001 & 0.29 & 0.47\\
+N2 amplitude & Athlete type×Undiagnosed Concussions×Trial Type & t(309)=-3.03, p=.003 & 0.26 & 0.58\\
+\bottomrule
+\multicolumn{5}{l}{\textit{Note: } $\mathrm {R^2_{LMM(c)}: Conditional\ R^2; \ R^2_{LMM(m)}: Marginal\ R^2  }$}\\
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+
+\caption{\label{tab:unnamed-chunk-14}\label{tbl:summary_project1b}Results Summary: Head Impact Metrics in Contact Athletes}
+\centering
+\begin{tabular}{lllrr}
+\toprule
+Component & Test & Result & R\textsuperscript{2}\textsubscript{LMM(c)} & R\textsuperscript{2}\textsubscript{LMM(m)}\\
+\midrule
+P3b amplitude & Linear Impact Density×Concussion History & t(46)=-2.02, p=.050 & 0.19 & 0.29\\
+N2 amplitude & Linear Impact Density×Concussion History & t(14)=2.30, p=.037 & 0.43 & 0.62\\
+N2 amplitude & Rotational Impact Density×Concussion History & t(14)=2.25, p=.042 & 0.44 & 0.65\\
+\bottomrule
+\multicolumn{5}{l}{\textit{Note: } $\mathrm {R^2_{LMM(c)}: Conditional\ R^2; \ R^2_{LMM(m)}: Marginal\ R^2  }$}\\
+\end{tabular}
+\end{table}
+\end{landscape}
+}
+
+
+
+
+
+\newenvironment{p2_table}
+{
+\begin{landscape}
+\onehalfspacing
+\subsection{Results Summary}\label{results-summary-2}
+\begin{table}[H]
+\caption{\label{tab:unnamed-chunk-24}\label{tbl:summary_project2a}Results Summary: Contact vs Non-Contact Athletes}
+\centering
+\begin{tabular}{lllrr}
+\toprule
+Component & Test & Result & R\textsuperscript{2}\textsubscript{LMM(c)} & R\textsuperscript{2}\textsubscript{LMM(m)}\\
+\midrule
+CRN/ERN amplitude & CRN/ERN×Trial Type & t(190)=-6.08, p<.001 & 0.36 & 0.49\\
+CRN amplitude & Athlete Type×Concussion History×Time & t(120)=-2.30, p=.023 & 0.16 & 0.53\\
+ERN amplitude & Undiagnosed Concussions & t(19)=-2.20, p=.040 & 0.15 & 0.46\\
+Pe amplitude & Athlete type×Undiagnosed Concussions×Trial Type & t(180)=-4.21, p<.001 & 0.55 & 0.64\\
+\bottomrule
+\multicolumn{5}{l}{\textit{Note: } $\mathrm {R^2_{LMM(c)}: Conditional\ R^2; \ R^2_{LMM(m)}: Marginal\ R^2  }$}\\
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+
+\caption{\label{tab:unnamed-chunk-25}\label{tbl:summary_project2b}Results Summary: Head Impact Metrics in Contact Athletes}
+\centering
+\begin{tabular}{lllrr}
+\toprule
+Component & Test & Result & R\textsuperscript{2}\textsubscript{LMM(c)} & R\textsuperscript{2}\textsubscript{LMM(m)}\\
+\midrule
+CRN amplitude & Peak Linear Acceleration & t(8)=3.80, p=.005 & 0.19 & 0.39\\
+CRN amplitude & Number of Impacts & t(8)=2.45, p=.040 & 0.05 & 0.41\\
+ERN amplitude & Linear Impact Density×Concussion History & t(8)=-2.35, p=.040 & 0.27 & 1.00\\
+Pe amplitude (NgI) & Linear Impact Density×Concussion History & t(14)=3.04, p=.009 & 0.64 & 0.69\\
+Pe amplitude (NgI) & Rotational Impact Density×Concussion History & t(14)=3.01, p=.009 & 0.64 & 0.69\\
+\bottomrule
+\multicolumn{5}{l}{\textit{Note: } $\mathrm {R^2_{LMM(c)}: Conditional\ R^2; \ R^2_{LMM(m)}: Marginal\ R^2  }$}\\
+\end{tabular}
+\end{table}
+
+\end{landscape}
+\doublespacing
+}
+
+
+
+
+
+
+
+
+\newenvironment{tolscape}
+{\begin{landscape}
+\begin{figure}
+\vspace{-3cm}
+\hspace{-2cm}
+\centering
+}
+{
+\vfill
+\end{figure}
+\end{landscape}
+}
+
+
+
+
+
+
+
+

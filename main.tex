@@ -1,0 +1,215 @@
+\documentclass[]{styles/ucalgary-memoir-thesis-master/ucalgmthesis}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={My Thesis Title},
+            pdfauthor={Andrew Lapointe},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{My Thesis Title}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Andrew Lapointe}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+    \date{}
+    \predate{}\postdate{}
+  
+% A Sample Thesis for the University of Calgary
+% =============================================
+
+% Load the UCalgary Memoir Thesis class. By default (without options),
+% this produces a 1-1/2 spaced thesis in 11 point font without running
+% heads. Use package options singlespaced or doublespaced for single
+% or double line spacing. The default font is LaTeX's Computer
+% Modern. Use package options times, palatino, libertine, garamond, or
+% utopia for other nice typefaces. (You may need to install the
+% relevant packages to get these to work.) Use package option headers
+% if you want running heads. Use option fullpage if you want the text
+% to occupy all allowable space (1 inch margins all around), or option
+% manuscript if you want a page layout suitable for reviewing and
+% proof reading. Option manuscript selects 12 pt type, doublespaced,
+% approx. 25 lines per page, with approx. 72 characters per line. You
+% may want to remove the option for the version you file in the Vault;
+% it looks nicer and is a bit more compact. You can also use any
+% options that the memoir class recognizes, such as 10pt for 10 point
+% font, 11pt for 11 point font, 12pt for 12 point type,
+% etc. Documentation of the memoir package can be found at
+% https://ctan.org/pkg/memoir?lang=en
+
+%\documentclass[utopia,headers,manuscript]{ucalgmthesis}
+
+% Using LaTeX? Then you're probably using math, and so you want to use
+% the AMS math commands and define some theorem environments! But you
+% can take these out or use your own favorite theorem package.
+
+\usepackage{amsmath,amsthm}
+
+\newtheorem{thm}{Theorem}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition} % please number all of them together!
+
+\usepackage{microtype}% microtype makes everything look better
+
+% We'll need some colored links, so we load xcolor and hyperref. But
+% you can take that out if you don't want links at all or are happy
+% with the standard garish colored boxes.
+
+\usepackage[dvipsnames]{xcolor}
+
+% You can turn off the boxes around links made by hyperref. Then links
+% will appear in a different color, and per guidelines, all links must
+% be blue or black. For blue links say
+
+\usepackage[colorlinks,allcolors=MidnightBlue]{hyperref} 
+
+% For black links, 
+% \usepackage[hidelinks]{hyperref}
+
+% If you prefer hyperref's boxes around links (which don't print), you
+% can also change their color. With boxes around links, you probably
+% don't want everything in the table of contents to be a link, so we
+% only make the page numbers links.
+%
+% \usepackage[allbordercolors=Periwinkle,linktocpage]{hyperref}
+
+% The table of contents in your PDF reader's sidebar is just titles by
+% default, but it's nice to also have chapter and section numbers for
+% easy navigation.
+
+\usepackage[numbered]{bookmark}
+
+% For author-year references, you probably want to use natbib with a
+% bibliography style appropriate for your discipline; or check out
+% latexbib!
+
+\usepackage[round]{natbib}
+\bibliographystyle{natbib-oup}
+
+% The blindtext package produces the ``lorem ipsum''
+% texts in this sample and can safely be removed.
+
+\usepackage{blindtext}
+
+% Now we put in the information for the thesis title page.
+
+% Full Name
+
+\author{Jane Mary Doe}
+
+% Full Title
+
+\title{An Important Contribution to the Literature}
+
+% Official name of the degree
+
+\degree{Doctor of Philosophy}
+
+% The name of the graduate program (not the department!)
+
+\prog{Graduate Program in Philosophy}
+
+% The month (for the final version: when you file, not when you defended)
+
+\monthname{May}
+
+% The year
+
+\thesisyear{2018}
+
+% Tell hyperref to put author and title into the PDF metadata
+
+\hypersetup{pdfinfo={Title={\thetitle},Author={\theauthor}}}
+
+% If you want memoir to produce endnotes, turn them on here
+
+\makepagenote
+
+% Often you only want to output a single chapter so you can send it to
+% your supervisor. Use includeonly and make sure everything you don't
+% always want compiled to PDF is include'd from a separate file. For
+% instance, to produce a PDF only of chapter 1, endnotes and
+% bibliography, say
+
+% \includeonly{chapter1,backmatter}
+
+% To compile only the title page, which you need when submitting your
+% thesis, say
+
+% \includeonly{titlepage}
+
+\begin{document}
+\maketitle
+
+
+
+
+\end{document}
