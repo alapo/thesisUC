@@ -143,6 +143,11 @@ This part can suck for some people. But I would highly recommend switching to sa
 
 Screenshots and a more detailed guide are forthcoming. 
 
+## Installing Git for RStudio
+
+You can read about it [here](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
+
+
 ## For my use (sites on how to use Git with RStudio)
 [Guide to initial setup with Mac](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd)
 
