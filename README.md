@@ -22,6 +22,15 @@ This guide has the goal of introducing you to a new way of writing your thesis u
 - Confirm that the template being used is accurate
 - Create a docx template that we can use to export to `docx`.
 - `options(repos='http://cran.rstudio.com/')`
+[ ] Find a way to automatically edit `D:\Users\~\Documents\.R\rstudio\keybindings\addins.json` to 
+    {
+    "citr::insert_citation" : "Alt+M"
+    }
+[ ] Find a way to automatically edit `D:\Users\~\Documents\.R\rstudio\keybindings\rstudio_bindings.json` to 
+    {
+    "clearWorkspace" : "Ctrl+Alt+L",
+    "layoutEndZoom" : "Ctrl+0"
+    }
 
 # Installing Required Programs
 
