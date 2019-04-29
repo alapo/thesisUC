@@ -10,7 +10,11 @@ This guide has the goal of introducing you to a new way of writing your thesis u
 
 ![alt text](https://i.imgur.com/dxFzd7X.gif)
 
+# Additional Links to Checkout
 
+![Bookdown Thesis](https://eddjberry.netlify.com/post/writing-your-thesis-with-bookdown/)
+![BookdownPlus](https://bookdown.org/baydap/bookdownplus/academic.html)
+![Text Mining your Literature Review](https://bookdown.org/fgabriel1891/literature_review/text-mining-of-multispecies-interactions-in-published-literature.html)
 
 # To Do
 
