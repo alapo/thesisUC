@@ -171,3 +171,5 @@ https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html
 https://resources.github.com/whitepapers/github-and-rstudio/
 
 [A review of Markdown syntax](https://guides.github.com/features/mastering-markdown/)
+
+[A style guide to R](https://www.r-bloggers.com/my-r-style-guide/)
