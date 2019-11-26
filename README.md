@@ -173,3 +173,5 @@ https://resources.github.com/whitepapers/github-and-rstudio/
 [A review of Markdown syntax](https://guides.github.com/features/mastering-markdown/)
 
 [A style guide to R](https://www.r-bloggers.com/my-r-style-guide/)
+
+[Writing your thesis with Bookdown](https://eddjberry.netlify.com/post/writing-your-thesis-with-bookdown/)
