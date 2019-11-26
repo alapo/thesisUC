@@ -175,3 +175,6 @@ https://resources.github.com/whitepapers/github-and-rstudio/
 [A style guide to R](https://www.r-bloggers.com/my-r-style-guide/)
 
 [Writing your thesis with Bookdown](https://eddjberry.netlify.com/post/writing-your-thesis-with-bookdown/)
+[More on RMarkdown](https://annakrystalli.me/rrresearch/05_literate-prog.html)
+
+[Reproducible Science](https://ecoinfaeet.github.io/2016/07/06/reproducibilidad/)
