@@ -53,6 +53,7 @@ In the Console run
 
      options(repos = getOption("repos")["CRAN"])
 
+Create your own [GitHub token](https://happygitwithr.com/github-pat.html) and add it to *.Renviron 
 
 # Using References
 For using references we have 3 packages we need to install
