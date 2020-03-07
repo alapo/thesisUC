@@ -45,9 +45,16 @@ Before we start there are a few things we need to make this go well.
 3. Install [RStudio](https://www.rstudio.com/products/rstudio/download/)
 4. Install [RTools](https://cran.r-project.org/bin/windows/Rtools/)
 5. Install [tinytex](https://yihui.org/tinytex/)
-5. Install [MikTex](https://miktex.org/download) (if you are using Windows) or [MacTex](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd) (if you are using a Mac)
+6. Install [MikTex](https://miktex.org/download) (if you are using Windows) or [MacTex](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-macos-high-sierra-e7b5705c9fd) (if you are using a Mac)
+
+# Running R for the first time. 
+
+In the Console run
+
+     options(repos = getOption("repos")["CRAN"])
 
 
+# Using References
 For using references we have 3 packages we need to install
 1. Install [Zotero](https://www.zotero.org/download/) 
 2. Install [Better BibTex Plugin](https://retorque.re/zotero-better-bibtex/installation/)
