@@ -19,7 +19,7 @@ This guide has the goal of introducing you to a new way of writing your thesis u
 # To Do
 
 - [x] Add the citation style language into a folder in the repository.
-- [ ] Add how to naviguate using the Document Outline (`Ctrl+Shift+O`)
+- [ ] Add how to navigate using the Document Outline (`Ctrl+Shift+O`)
 - [ ] Add `stats.R` and other documents so the person can run the document right off the bat. Test this using Ibukun's computer to make sure it works.
 - [ ] Talk about picking between bookdown or the method I used in my thesis (which won't have proper labelling of the docx figures and tables).
 - [ ] Fix the current UCalgary .cls files. They are fairly crap for inclusion in RMarkdown. Look into the University of Michigan version and adapt from there.
@@ -34,6 +34,7 @@ This guide has the goal of introducing you to a new way of writing your thesis u
     "clearWorkspace" : "Ctrl+Alt+L",
     "layoutEndZoom" : "Ctrl+0"
     }
+- [ ] Add video I sent to colleague on using the Spell Checker within Rmd documents.
 
 # Installing Required Programs
 
