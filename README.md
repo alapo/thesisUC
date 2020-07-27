@@ -52,8 +52,21 @@ Before we start there are a few things we need to make this go well.
 In the Console run
 
      options(repos = getOption("repos")["CRAN"])
-
+     
 Create your own [GitHub token](https://happygitwithr.com/github-pat.html) and add it to *.Renviron 
+
+Some packages I would recommend are shown below. These can be a bit of a pain to install the first time. 
+
+    install.packages("devtools")
+    install.packages("BiocManager")
+    if (!require("pacman")) install.packages("pacman") # will install pacman which I use to load and install libraries.
+    
+    devtools::install_github('achetverikov/apastats',subdir='apastats')
+    devtools::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)
+    pacman::p_load_current_gh(c("achetverikov/apastats","benmarwick/wordcountaddin"), dependencies = TRUE)
+    pacman::p_load_gh(c('christophergandrud/DataCombine'), dependencies = TRUE)
+    devtools::install_github("easystats/correlation")
+    devtools::install_github("easystats/easystats")
 
 # Using References
 For using references we have 3 packages we need to install
